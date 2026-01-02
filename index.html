@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noorskin - True Skin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+    
+    :root {
+      --font-main: 'Montserrat', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-main);
+      scroll-behavior: smooth;
+      color: #3D3935;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Override global para garantir que nenhuma classe legada quebre o padrão */
+    h1, h2, h3, h4, h5, h6, p, span, a, button, li, div {
+      font-family: var(--font-main) !important;
+    }
+
+    /* Animações de entrada */
+    .animeTexto {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+
+    .animeTexto.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .animeZoom {
+      overflow: hidden;
+    }
+
+    .animeZoom img {
+      transition: transform 2s cubic-bezier(0.2, 0, 0.2, 1);
+      transform: scale(1.1);
+    }
+
+    .animeZoom.active img {
+      transform: scale(1);
+    }
+
+    /* Animação de Letreiro */
+    @keyframes scrollText {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .marquee-wrapper {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: flex;
+      animation: scrollText 30s linear infinite;
+      width: max-content;
+    }
+
+    .marquee-item {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #063326;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 767px) {
+      .marquee-item {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+      }
+      .marquee-content {
+        animation-duration: 15s;
+      }
+    }
+
+    .parallax-container {
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+    }
+
+    .parallax-img {
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      width: 100%;
+      height: 130%;
+      object-fit: cover;
+      transform: translateX(-50%) translateZ(0);
+      will-change: transform;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
