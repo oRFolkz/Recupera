@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center max-w-[1300px]">
         {/* Logo */}
         <a href="#" className="text-2xl font-black tracking-[0.15em] text-[#063326] z-50 relative">
           NOORSKIN

@@ -5,7 +5,7 @@ export const FooterBanner: React.FC = () => {
   return (
     <section className="relative h-[600px] flex items-center justify-center bg-parallax" style={{ backgroundImage: `url('https://d3eomlzmsu8e9b.cloudfront.net/media/wysiwyg/produtos/noorskin/true-skin/parallax-agua.jpg')` }}>
       <div className="absolute inset-0 bg-black/30"></div>
-      <div className="container mx-auto px-4 relative z-10 text-center text-white font-sans">
+      <div className="container mx-auto px-4 relative z-10 text-center text-white font-sans max-w-[1300px]">
         <h2 className="text-4xl md:text-7xl font-black mb-6 drop-shadow-xl uppercase tracking-tighter">
           Reconnect your <span className="text-white">light</span>
         </h2>

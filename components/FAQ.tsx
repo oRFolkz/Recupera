@@ -36,7 +36,7 @@ export const FAQ: React.FC = () => {
 
   return (
     <section id="faq" className="py-20 md:py-32 bg-white font-sans">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-[1300px]">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#063326] leading-tight">
             Perguntas <span className="font-normal">Frequentes</span>

@@ -26,7 +26,7 @@ export const ProductIngredients: React.FC = () => {
 
   return (
     <section className="py-16 bg-[#F1F5F2] font-sans overflow-hidden">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 max-w-[1300px]">
         
         <div ref={reveal.ref} className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center animeTexto ${reveal.className}`}>
           

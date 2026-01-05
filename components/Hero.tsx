@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="beneficios" className="relative py-12 lg:py-16 bg-white overflow-hidden font-sans">
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 max-w-[1300px]">
         <div ref={reveal.ref} className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Coluna 1: Conteúdo de Texto + Dados */}

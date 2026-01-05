@@ -56,7 +56,7 @@ export const ClinicalResults: React.FC = () => {
 
   return (
     <section id="resultados-clinicos" className="py-16 md:py-24 bg-white relative overflow-hidden font-sans">
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 max-w-[1300px]">
         <div ref={reveal.ref} className={`text-center max-w-4xl mx-auto mb-12 md:mb-16 animeTexto ${reveal.className}`}>
           
           {/* Kicker principal: text-sm (~12.25px no seu ambiente) */}

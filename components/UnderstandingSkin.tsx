@@ -8,7 +8,7 @@ export const UnderstandingSkin: React.FC = () => {
 
   return (
     <section className="relative overflow-visible bg-[#F8F9FA] pb-24 lg:pb-32">
-      <div className="container mx-auto px-4 pt-24 pb-12 text-center">
+      <div className="container mx-auto px-4 pt-24 pb-12 text-center max-w-[1300px]">
         <div ref={reveal.ref} className={`max-w-3xl mx-auto animeTexto ${reveal.className}`}>
           <h2 className="text-[#063326] text-3xl md:text-[48px] font-bold leading-tight mb-8">
             A Ciência por trás do Alívio: <br />
@@ -20,11 +20,11 @@ export const UnderstandingSkin: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-30">
+      <div className="container mx-auto px-4 relative z-30 max-w-[1300px]">
         <Ingredients />
       </div>
 
-      <div className="container mx-auto px-4 mt-24">
+      <div className="container mx-auto px-4 mt-24 max-w-[1300px]">
         <div className="flex flex-wrap items-center">
           <div className="w-full lg:w-6/12 mb-12 lg:mb-0">
              <img 

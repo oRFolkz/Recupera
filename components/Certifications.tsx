@@ -16,7 +16,7 @@ export const Certifications: React.FC = () => {
 
   return (
     <section className="bg-white overflow-hidden">
-      <div className="container mx-auto px-4 py-24">
+      <div className="container mx-auto px-4 py-24 max-w-[1300px]">
         <div ref={reveal.ref} className={`flex flex-col lg:flex-row items-center justify-between gap-16 animeTexto ${reveal.className}`}>
           <div className="text-center md:text-left flex flex-col items-center lg:items-start lg:w-1/4">
             <div className="w-32 h-32 bg-green-50 rounded-none flex items-center justify-center mb-6">

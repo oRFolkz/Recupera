@@ -8,7 +8,7 @@ export const ToxicLoad: React.FC = () => {
 
   return (
     <section className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-[1300px]">
         
         {/* Bloco 1: Texto Esquerda, Foto Direita */}
         <div className="flex flex-wrap -mx-4 items-stretch mb-12 lg:mb-24">

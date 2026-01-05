@@ -7,7 +7,7 @@ export const ScientificComparison: React.FC = () => {
 
   return (
     <section className="py-16 md:py-20 bg-[#F1F5F2] overflow-hidden font-sans">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-[1300px]">
         <div ref={reveal.ref} className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Coluna Esquerda: Imagens Compactas */}

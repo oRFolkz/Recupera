@@ -26,7 +26,7 @@ const App: React.FC = () => {
 
         {/* Section 4: Parallax com Card Dark Glass - PASTEL */}
         <section className="py-8 md:py-12 bg-[#F1F5F2]">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-[1300px]">
             <ParallaxSection image="https://i.postimg.cc/hP0KRZ15/Generated-Image-January-05-2026-12-14PM.png" height="480px">
               <div className="w-full flex justify-end items-center h-full px-4 md:px-12 py-4">
                 <div className="max-w-[550px] w-full bg-[#063326]/90 backdrop-blur-[16px] border border-white/10 p-6 md:p-10 text-left shadow-2xl rounded-xl">
@@ -60,7 +60,7 @@ const App: React.FC = () => {
 
         {/* Section 5: Seu Ritual de Recuperação - BRANCO */}
         <section id="ritual" className="py-16 md:py-32 bg-white">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-[1300px]">
             <div className="flex flex-wrap -mx-4 items-start justify-center relative">
               
               {/* Coluna do Vídeo (Sticky Desktop, Normal Mobile) */}
