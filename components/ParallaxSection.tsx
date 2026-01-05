@@ -54,10 +54,11 @@ export const ParallaxSection: React.FC<ParallaxSectionProps> = ({
   }, []);
 
   return (
-    <div ref={containerRef} className="parallax-container rounded-xl shadow-xl" style={{ height }}>
+    <div ref={containerRef} className="parallax-container w-full relative overflow-hidden" style={{ height }}>
       <img ref={imgRef} src={image} className="parallax-img" alt="Background Parallax" />
       {showOverlay && <div className="absolute inset-0 bg-black/10"></div>}
-      <div className="relative z-10 h-full flex items-center justify-center">
+      {/* Removido flex center para permitir que o filho controle o layout (container) */}
+      <div className="relative z-10 h-full">
         {children}
       </div>
     </div>

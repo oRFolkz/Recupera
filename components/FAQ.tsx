@@ -46,7 +46,7 @@ export const FAQ: React.FC = () => {
           </p>
         </div>
 
-        <div ref={reveal.ref} className={`space-y-4 ${reveal.className}`}>
+        <div ref={reveal.ref} className={`space-y-4 max-w-[670px] mx-auto w-full ${reveal.className}`}>
           {items.map((item, idx) => (
             <div key={idx} className="bg-white rounded-xl md:rounded-2xl shadow-[0_2px_15px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden transition-all duration-300">
               <button 
@@ -70,13 +70,6 @@ export const FAQ: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 md:mt-20 text-center">
-            <h4 className="text-[#A0A0A0] text-[10px] md:text-sm font-bold uppercase tracking-[0.1em] mb-2">AINDA TEM DÚVIDAS?</h4>
-            <a href="#" className="text-[#063326] text-base md:text-lg font-normal hover:opacity-80 transition-opacity underline decoration-1 underline-offset-4">
-                Fale com nosso suporte.
-            </a>
         </div>
       </div>
     </section>
