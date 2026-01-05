@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
                   <span className="block text-[11px] md:text-sm text-gray-600 font-medium leading-snug mt-1 md:mt-2">Notaram melhora na pele</span>
                 </div>
                 {/* Item 5 - Full Width */}
-                <div className="col-span-2 border-t border-[#063326]/5 pt-4 mt-2">
+                <div className="col-span-2">
                   <span className="block text-3xl lg:text-4xl font-bold text-[#063326]">97%</span>
                   <span className="block text-[11px] md:text-sm text-gray-600 font-medium leading-snug mt-1 md:mt-2">Aprovaram o produto e comprariam novamente</span>
                 </div>

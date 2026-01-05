@@ -59,8 +59,8 @@ export const ClinicalResults: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div ref={reveal.ref} className={`text-center max-w-4xl mx-auto mb-12 md:mb-16 animeTexto ${reveal.className}`}>
           
-          {/* Kicker principal da seção - Permitido 12px */}
-          <span className="text-[#E3C08D] font-bold uppercase tracking-[0.2em] text-[12px] md:text-[12px] mb-4 block">
+          {/* Kicker principal: text-sm (~12.25px no seu ambiente) */}
+          <span className="text-[#E3C08D] font-bold uppercase tracking-[0.2em] text-sm md:text-sm mb-4 block">
             BENEFÍCIOS COMPROVADOS
           </span>
 
@@ -68,8 +68,8 @@ export const ClinicalResults: React.FC = () => {
             Eficácia que se <span className="font-normal">sente na pele</span>
           </h2>
           
-          {/* Subtítulo descritivo - Mínimo 14px */}
-          <p className="text-gray-500 text-[14px] md:text-base font-light leading-relaxed max-w-2xl mx-auto">
+          {/* Subtítulo: text-base (padrão > 14px) */}
+          <p className="text-gray-500 text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto">
             Tecnologia desenvolvida para entregar resultados superiores em menos tempo.
           </p>
         </div>
@@ -90,15 +90,15 @@ export const ClinicalResults: React.FC = () => {
                   <h4 className="text-lg font-bold text-[#063326] leading-tight mb-1">
                     {item.title}
                   </h4>
-                  {/* Kicker interno do card - Ajustado para 14px conforme solicitado para textos legíveis */}
-                  <span className="text-[14px] font-bold uppercase tracking-wider text-[#E3C08D]">
+                  {/* Kicker do Card: text-sm (~12.25px) */}
+                  <span className="text-sm font-bold uppercase tracking-wider text-[#E3C08D]">
                     {item.kicker}
                   </span>
                 </div>
               </div>
 
-              {/* Descrição do card - Mínimo 14px */}
-              <p className="text-gray-600 text-[14px] leading-relaxed font-light mt-2 pl-0 md:pl-[calc(1rem+3rem)]">
+              {/* Descrição do Card: text-base (padrão > 14px) */}
+              <p className="text-gray-600 text-base leading-relaxed font-light mt-2 pl-0 md:pl-[calc(1rem+3rem)]">
                 {item.description}
               </p>
             </div>
@@ -114,13 +114,13 @@ export const ClinicalResults: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
             {/* Coluna 1 */}
             <div>
-              {/* Título da coluna - Mínimo 14px */}
-              <h4 className="font-bold text-[#E3C08D] mb-4 md:mb-5 text-[14px] md:text-[15px] uppercase tracking-wider border-b border-[#063326]/10 pb-3">
+              {/* Título da coluna: text-base */}
+              <h4 className="font-bold text-[#E3C08D] mb-4 md:mb-5 text-base md:text-lg uppercase tracking-wider border-b border-[#063326]/10 pb-3">
                 Ideal para tratamento de
               </h4>
               <ul className="space-y-3">
                 {treatments.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-700 text-[14px] md:text-[15px] font-medium leading-normal">
+                  <li key={i} className="flex items-start gap-3 text-gray-700 text-base md:text-lg font-medium leading-normal">
                     <span className="w-1.5 h-1.5 bg-[#063326] rounded-full flex-shrink-0 mt-2"></span>
                     {item}
                   </li>
@@ -130,12 +130,12 @@ export const ClinicalResults: React.FC = () => {
 
             {/* Coluna 2 */}
             <div>
-              <h4 className="font-bold text-[#E3C08D] mb-4 md:mb-5 text-[14px] md:text-[15px] uppercase tracking-wider border-b border-[#063326]/10 pb-3">
+              <h4 className="font-bold text-[#E3C08D] mb-4 md:mb-5 text-base md:text-lg uppercase tracking-wider border-b border-[#063326]/10 pb-3">
                 Também indicado para
               </h4>
               <ul className="space-y-3">
                 {indications.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-700 text-[14px] md:text-[15px] font-medium leading-normal">
+                  <li key={i} className="flex items-start gap-3 text-gray-700 text-base md:text-lg font-medium leading-normal">
                     <span className="w-1.5 h-1.5 bg-[#063326] rounded-full flex-shrink-0 mt-2"></span>
                     {item}
                   </li>
