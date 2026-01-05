@@ -12,7 +12,7 @@ export const UnderstandingSkin: React.FC = () => {
         <div ref={reveal.ref} className={`max-w-3xl mx-auto animeTexto ${reveal.className}`}>
           <h2 className="text-[#063326] text-3xl md:text-[48px] font-bold leading-tight mb-8">
             A Ciência por trás do Alívio: <br />
-            <span className="italic font-normal">Sinergia Ozonizada.</span>
+            <span className="font-normal">Sinergia Ozonizada.</span>
           </h2>
           <p className="text-gray-600 text-lg md:text-xl font-light leading-relaxed">
             A maioria dos produtos tópicos fica apenas na superfície da pele. O N2 utiliza o <strong>Ozônio Ativo</strong> como veículo para transportar ingredientes potentes até a origem da dor, garantindo <strong>absorção profunda e resultados acelerados</strong>.

@@ -5,53 +5,51 @@ import { ClinicalResults } from './components/ClinicalResults';
 import { ParallaxSection } from './components/ParallaxSection';
 import { ScientificComparison } from './components/ScientificComparison';
 import { FAQ } from './components/FAQ';
+import { Marquee } from './components/Marquee';
+import { ProductIngredients } from './components/ProductIngredients';
 
 const App: React.FC = () => {
-  const benefits = [
-    "<strong>Aceleração da Recuperação Muscular:</strong> Reduz drasticamente o tempo de inatividade pós-treino através da <strong>oxigenação tecidual direta</strong>.",
-    "<strong>Alívio Imediato da Dor e Inchaço:</strong> A sinergia criogênica da Cânfora e Menta bloqueia os sinais de dor enquanto a <strong>Arnica combate a inflamação</strong>.",
-    "<strong>Regeneração Dérmica Profunda:</strong> Tecnologia de ozonídeos que <strong>estimula a cicatrização</strong> e melhora visivelmente a textura da pele."
-  ];
-
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <main className="flex-grow">
-        {/* Section 1: Resultados Visíveis */}
-        <ScientificComparison />
+        {/* Marquee Trust Bar */}
+        <Marquee />
 
-        {/* Section 2: Engenharia Natural (Movido para cá) */}
+        {/* Section 1: Eficácia que se sente na pele (ClinicalResults) - BRANCO */}
         <ClinicalResults />
 
-        {/* Section 3: Hero (Ciência da Ozonoterapia - Compactado) */}
+        {/* Section 2: Resultados Visíveis (ScientificComparison) - PASTEL */}
+        <ScientificComparison />
+
+        {/* Section 3: Hero (Ciência da Ozonoterapia) - BRANCO */}
         <Hero />
 
-        {/* Section 4: Parallax com Card Dark Glass (Compactado) */}
+        {/* Section 4: Parallax com Card Dark Glass - PASTEL */}
         <section className="py-8 md:py-12 bg-[#F1F5F2]">
           <div className="container mx-auto px-4">
-            <ParallaxSection image="https://i.postimg.cc/cLgj7PDK/image.png" height="480px">
+            <ParallaxSection image="https://i.postimg.cc/hP0KRZ15/Generated-Image-January-05-2026-12-14PM.png" height="480px">
               <div className="w-full flex justify-end items-center h-full px-4 md:px-12 py-4">
                 <div className="max-w-[550px] w-full bg-[#063326]/90 backdrop-blur-[16px] border border-white/10 p-6 md:p-10 text-left shadow-2xl rounded-xl">
                   {/* Título */}
-                  <h2 className="text-lg md:text-2xl text-white mb-4 leading-tight font-bold">
-                    Mais do que um Analgésico Tópico: <br />
-                    <span className="italic font-normal">Um Sistema de Biohacking para sua Pele e Músculos.</span>
+                  <h2 className="text-xl md:text-2xl text-white mb-4 md:mb-6 leading-tight font-bold">
+                    Por que escolher o N2 – Recupera Blend?
                   </h2>
                   
-                  {/* Lista de Benefícios (Copy da Imagem) */}
-                  <div className="space-y-4">
-                    {benefits.map((item, index) => (
-                      <div key={index} className="flex items-start gap-3">
-                        <div className="mt-1.5 min-w-[6px]">
-                          <div className="w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                        </div>
-                        <span className="text-[#F0F0F0] text-xs md:text-sm leading-relaxed font-light" dangerouslySetInnerHTML={{ __html: item }}></span>
-                      </div>
-                    ))}
+                  {/* Texto Principal */}
+                  <div className="space-y-4 text-[#F0F0F0] text-sm md:text-base leading-relaxed font-light">
+                    <p>
+                      O N2 – Recupera Blend une a eficácia de ativos naturais cuidadosamente selecionados à inovação do processo de ozonização, resultando em uma fórmula moderna, segura e funcional para o cuidado muscular e da pele.
+                    </p>
+                    <p>
+                      Sua composição foi pensada para quem busca uma alternativa confiável aos métodos convencionais, sem abrir mão da naturalidade, da qualidade e de um padrão elevado de desenvolvimento.
+                    </p>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-white/10">
-                    <p className="text-[9px] text-white/60 font-bold uppercase tracking-[0.2em]">
-                      Tecnologia de Alta Absorção
+                  {/* Disclaimer */}
+                  <div className="mt-6 md:mt-8 pt-4 border-t border-white/10">
+                    <p className="text-[10px] md:text-[12px] text-white/80 leading-snug">
+                      <strong>Produto registrado e aprovado pelos órgãos competentes.</strong> <br/>
+                      Manter fora do alcance de crianças.
                     </p>
                   </div>
                 </div>
@@ -60,12 +58,13 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 5: Seu Ritual de Recuperação */}
-        <section id="ritual" className="py-24 md:py-32 bg-white">
+        {/* Section 5: Seu Ritual de Recuperação - BRANCO */}
+        <section id="ritual" className="py-16 md:py-32 bg-white">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -mx-4 items-start justify-center relative">
-              {/* Coluna do Vídeo (Sticky) */}
-              <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0 order-2 lg:order-1 lg:sticky lg:top-28 self-start">
+              
+              {/* Coluna do Vídeo (Sticky Desktop, Normal Mobile) */}
+              <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 order-2 lg:order-1 lg:sticky lg:top-28 self-start">
                 <div className="flex justify-center lg:justify-end w-full">
                   <div className="shadow-2xl overflow-hidden aspect-[4/5] relative rounded-xl bg-gray-100 w-full max-w-[450px]">
                     <video 
@@ -85,42 +84,40 @@ const App: React.FC = () => {
 
               {/* Coluna do Texto */}
               <div className="w-full lg:w-1/2 px-4 order-1 lg:order-2 mb-12 lg:mb-0 flex justify-center lg:justify-start">
-                <div className="max-w-md lg:ml-12">
-                  <h2 className="text-3xl md:text-[44px] font-bold mb-6 text-[#063326] leading-tight">
-                    Como Integrar o N2 na <br/>Sua Rotina de Performance.
+                <div className="max-w-md w-full lg:ml-12">
+                  <h2 className="text-3xl md:text-[44px] font-bold mb-6 text-[#063326] leading-tight text-center lg:text-left">
+                    Como Integrar o Recupera Blend <span className="font-normal">na Sua Rotina.</span>
                   </h2>
-                  <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-10 font-light">
-                    A eficácia do N2 Blend é potencializada pela forma como você o aplica. Siga os passos para garantir o máximo de absorção biativa.
+                  <p className="text-gray-500 text-base md:text-lg leading-relaxed mb-10 font-light text-center lg:text-left">
+                    A eficácia do N2 Blend é potencializada pela forma como você o aplica. Siga essas dicas para garantir o máximo de absorção bioativa.
                   </p>
                   
-                  <div className="space-y-12">
-                    <div>
-                      <h4 className="text-[11px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">PASSO 1: PREPARAÇÃO</h4>
+                  <div className="space-y-10 md:space-y-12">
+                    <div className="bg-gray-50 lg:bg-transparent p-6 lg:p-0 rounded-xl lg:rounded-none">
+                      <h4 className="text-[13px] md:text-[14px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">Para Dores e Inflamações</h4>
                       <p className="text-gray-600 text-sm md:text-base font-light leading-relaxed">
-                        Com a pele limpa (preferencialmente após o banho, quando os poros estão dilatados), prepare a região afetada. A pele limpa facilita a penetração dos ozonídeos ativos.
+                        Aplicar quantidade suficiente para espalhar no local a ser tratado e massagear suavemente. Usar 2 vezes ao dia ou quando necessário.
                       </p>
                     </div>
 
-                    <div>
-                      <h4 className="text-[11px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">PASSO 2: APLICAÇÃO E ATIVAÇÃO</h4>
+                    <div className="bg-gray-50 lg:bg-transparent p-6 lg:p-0 rounded-xl lg:rounded-none">
+                      <h4 className="text-[13px] md:text-[14px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">Para Pré-treino</h4>
                       <p className="text-gray-600 text-sm md:text-base font-light leading-relaxed">
-                        Aplique uma quantidade generosa do <strong>N2 Recupera Blend</strong>. Massageie a área com movimentos circulares e firmes. A massagem não só espalha o produto, mas ativa a circulação periférica, potencializando a ação vasodilatadora da cânfora.
+                        Aplicar no músculo que será trabalhado antes da atividade física.
                       </p>
                     </div>
 
-                    <div>
-                      <h4 className="text-[11px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">PASSO 3: FREQUÊNCIA E MOMENTO</h4>
-                      <div className="space-y-4 text-gray-600 text-sm md:text-base font-light leading-relaxed">
-                        <p><strong className="text-[#063326]">Pré-Treino:</strong> Aplique levemente para aquecer a musculatura e prevenir lesões.</p>
-                        <p><strong className="text-[#063326]">Pós-Treino:</strong> Use generosamente para recuperação imediata e relaxamento.</p>
-                        <p><strong className="text-[#063326]">Tratamento de Dor/Lesão:</strong> Repita a aplicação 2 a 3 vezes ao dia até a remissão dos sintomas.</p>
-                      </div>
+                    <div className="bg-gray-50 lg:bg-transparent p-6 lg:p-0 rounded-xl lg:rounded-none">
+                      <h4 className="text-[13px] md:text-[14px] font-bold text-[#063326] uppercase tracking-[0.2em] mb-3">Para Redução de Medidas</h4>
+                      <p className="text-gray-600 text-sm md:text-base font-light leading-relaxed">
+                        Aplicar no local desejado e massagear 2 vezes ao dia.
+                      </p>
                     </div>
 
                     {/* Dica de Especialista */}
-                    <div className="bg-[#F8F9FA] p-8 border-l-4 border-[#063326] rounded-xl shadow-sm">
+                    <div className="bg-[#F8F9FA] p-6 md:p-8 border-l-4 border-[#063326] rounded-xl shadow-sm mt-8">
                       <span className="text-[10px] font-bold text-[#063326] uppercase tracking-widest block mb-3">DICA DE ESPECIALISTA</span>
-                      <p className="text-[#3D3935] text-sm md:text-base leading-relaxed italic font-light">
+                      <p className="text-[#3D3935] text-sm md:text-base leading-relaxed font-light">
                         Para redução de medidas e celulite, utilize o N2 associado a uma massagem de drenagem linfática. O ozônio auxilia na quebra de toxinas locais.
                       </p>
                     </div>
@@ -131,7 +128,10 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 6: FAQ */}
+        {/* Section 6: Novos Ingredientes - PASTEL */}
+        <ProductIngredients />
+
+        {/* Section 7: FAQ - BRANCO */}
         <FAQ />
       </main>
     </div>

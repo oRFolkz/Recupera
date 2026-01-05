@@ -27,11 +27,11 @@ export const MetaModal: React.FC<MetaModalProps> = ({ isOpen, onClose }) => {
           </p>
           <div className="mt-8 space-y-6">
             <div className="border-l-4 border-rose-300 pl-4">
-              <h4 className="font-bold text-rose-800 uppercase text-xs tracking-widest">M.E.T.A. Imediata</h4>
+              <h4 className="font-bold text-rose-800 uppercase text-sm tracking-widest">M.E.T.A. Imediata</h4>
               <p className="text-sm text-gray-600">Resultados percebidos logo após a primeira aplicação do produto.</p>
             </div>
             <div className="border-l-4 border-rose-800 pl-4">
-              <h4 className="font-bold text-rose-950 uppercase text-xs tracking-widest">M.E.T.A. Tratamento</h4>
+              <h4 className="font-bold text-rose-950 uppercase text-sm tracking-widest">M.E.T.A. Tratamento</h4>
               <p className="text-sm text-gray-600">Benefícios cumulativos que transformam a saúde e aparência da pele com o uso contínuo.</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export const MetaModal: React.FC<MetaModalProps> = ({ isOpen, onClose }) => {
         
         <button 
           onClick={onClose}
-          className="mt-10 w-full bg-rose-900 text-white py-4 rounded-none font-bold hover:bg-rose-950 transition-colors uppercase tracking-[0.2em] text-xs"
+          className="mt-10 w-full bg-rose-900 text-white py-4 rounded-none font-bold hover:bg-rose-950 transition-colors uppercase tracking-[0.2em] text-sm"
         >
           Entendido
         </button>

@@ -73,7 +73,7 @@ export const Header: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-[#063326] text-white px-8 py-4 mt-4 text-xs font-bold uppercase tracking-[0.2em]">
+          <button className="bg-[#063326] text-white px-8 py-4 mt-4 text-sm font-bold uppercase tracking-[0.2em]">
             COMPRAR AGORA
           </button>
         </div>

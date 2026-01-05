@@ -40,7 +40,7 @@ export const UsageMode: React.FC = () => {
     <section className="py-32 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <span className="text-[#E3C08D] font-bold uppercase tracking-[0.2em] text-xs mb-3 block">
+          <span className="text-[#E3C08D] font-bold uppercase tracking-[0.2em] text-sm mb-3 block">
              VERSATILIDADE
           </span>
           <h2 className="text-3xl md:text-[44px] font-bold mb-6 text-gray-900 leading-tight">O Ritual N2</h2>
