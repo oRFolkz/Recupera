@@ -27,7 +27,7 @@ const App: React.FC = () => {
         {/* Section 4: Parallax com Card Dark Glass - PASTEL */}
         <section className="bg-[#F1F5F2]">
           {/* Container removido aqui para a imagem ocupar 100% da largura */}
-          <ParallaxSection image="https://i.postimg.cc/hP0KRZ15/Generated-Image-January-05-2026-12-14PM.png" height="480px">
+          <ParallaxSection image="https://i.postimg.cc/0jXjMBSW/Generated-Image-January-06-2026-3-31PM.png" height="480px">
             {/* Container adicionado aqui dentro para alinhar o conteúdo ao grid de 1300px */}
             <div className="container mx-auto px-4 max-w-[1300px] h-full flex justify-end items-center">
               <div className="w-full flex justify-end px-0 md:px-12 py-4">
@@ -68,18 +68,16 @@ const App: React.FC = () => {
               {/* Coluna do Vídeo (Sticky Desktop, Normal Mobile) */}
               <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 order-2 lg:order-1 lg:sticky lg:top-28 self-start">
                 <div className="flex justify-center lg:justify-end w-full">
-                  <div className="shadow-2xl overflow-hidden aspect-[4/5] relative rounded-xl bg-gray-100 w-full max-w-[450px]">
-                    <video 
-                      autoPlay 
-                      muted 
-                      loop 
-                      playsInline 
-                      className="w-full h-full object-cover"
-                    >
-                      <source src="https://framerusercontent.com/assets/oGWOkSo3em8eufTAx5oecHE7YY.mp4" type="video/mp4" />
-                      Seu navegador não suporta vídeos.
-                    </video>
-                    <div className="absolute inset-0 bg-[#063326]/5 pointer-events-none"></div>
+                  <div className="shadow-2xl overflow-hidden aspect-[9/16] relative rounded-xl bg-gray-100 w-full max-w-[400px]">
+                    <iframe 
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/QpvQyM5Vr9g" 
+                      title="Tensão, Lesão e Dores Crônicas- 94% Reduziram sua Dores #dores #doresarticulares #doresnocorpo" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
               </div>

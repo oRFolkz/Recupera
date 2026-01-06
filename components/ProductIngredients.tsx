@@ -65,12 +65,12 @@ export const ProductIngredients: React.FC = () => {
           {/* Coluna Direita: Imagem Livre */}
           <div className="order-1 md:order-2 flex justify-center items-center relative">
             {/* Elemento decorativo de fundo */}
-            <div className="absolute w-[350px] h-[350px] bg-white rounded-full blur-3xl opacity-80 -z-10"></div>
+            <div className="absolute bg-white rounded-full blur-3xl opacity-80 -z-10"></div>
             
             <img 
-              src="https://i.postimg.cc/NF92zqHJ/image-removebg-preview-1.png" 
+              src="https://i.postimg.cc/hvJVhcmJ/RECUPERA-BLEND-2-1.png" 
               alt="N2 Recupera Blend" 
-              className="w-56 md:w-72 drop-shadow-2xl transition-transform duration-700 hover:scale-105 mix-blend-multiply"
+              className="drop-shadow-2xl transition-transform duration-700 hover:scale-105"
             />
           </div>
 
